@@ -1,0 +1,34 @@
+                                    Multi purpose security tool v1.0
+
+Script para realizar multiples tareas de ciber seguirdad
+
+Instrucciones de uso:
+
+*El archivo principal (MST.py) debe estar en la misma direccion que
+ los  2 modulos Xtract_imgAndmails y extractDataFromImages2 para que
+ la herramienta funcione correctamente.
+
+*ejecucion desde terminal:
+ python MST.py -h , despliega el home screen con las opciones
+ de ejecucion
+
+Opciones de ejecucion:
+Para estas opciones el argumento -op es obligatorio
+
+*Buscar direcciones de correo de una compañia:
+  MST.py -op 1 -organization "nombre de la compañia"
+
+*Analizar metadatos de imagenes:
+ MST.py -op 2 -path "nombre del archivo o ruta"
+
+*Obtener imagenes y direcciones de correo de un sitio web:
+ MST.py -op 3 -url "link del sitio web"
+
+*Obtener el banner de un servidor web:
+ MST.py -op 4 -target " link del sitio web " -port "puerto para la conexion"
+
+*Enviar correos a partir de un archivo con direcciones:
+ MST.py -op 5 -from "direccion del remitente" -to "ruta o nombre del archivo con las direcciones destinatario"
+    -subject "Asunto del correo" -msg "mensaje a enviar"
+
+Nota: Los reportes que genera la herramienta se guardaran en la misma ruta que se ejecuto la herramienta
